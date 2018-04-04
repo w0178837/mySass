@@ -1,0 +1,25 @@
+.list {
+
+  %listElement {
+    padding-left: 2%;
+    @include transition(padding-left 1s);
+    &:hover {
+      padding-left: 8%;
+    }
+  }
+
+  h2 {
+    color: $color-headlines;
+  }
+
+  ul {
+    @extend %listElement;
+    list-style: square;
+  }
+
+  ol {
+    @extend %listElement;
+    list-style-type: upper-roman;
+  }
+
+}

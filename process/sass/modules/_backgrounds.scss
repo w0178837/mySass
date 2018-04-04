@@ -1,0 +1,58 @@
+.background {
+	color: $color-main;
+	margin: 20px 0;
+	width: 100%;
+	display: table;
+
+	.container {
+		display: table-cell;
+		vertical-align: bottom;
+		padding-bottom: 20px;
+
+		h1 {
+			color: $color-headlines;
+			font-family: $font-main;
+			font-size: 5rem;
+			line-height: 105%;
+			margin-bottom: 0;
+			padding: 0 10%;
+		}
+
+		p {
+			padding: 0 10%;
+			margin-top: 0;
+		}
+	}
+}
+
+.jumbotron {
+	@include backImage(
+		'../images/mountain.jpg',
+		600px);
+	margin-top: 0;
+
+	a {
+		color: $color-main;
+
+		&:hover {
+			color: darken($color-main, 25%);
+		}
+
+		&:visited {
+			color: $color-main;
+
+			&:hover {
+				color: darken($color-main, 25%);
+			}
+		}
+
+
+
+	}
+}
+
+.bridge {
+	@include backImage(
+		'../images/jellyfish.jpg');
+	margin-top: 5px;
+}
